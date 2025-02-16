@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { allProduct } from "../../../api/allProductsList";
-import ShoppingPage from "@/app/shop/page";
+import { ShoppingPage } from "../ShoppingPage/ShoppingPage";
 import { Button } from "../ui/button";
 import { IoEyeSharp } from "react-icons/io5";
 

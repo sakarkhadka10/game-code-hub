@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const ProductCard = ({
   image,
   title,
@@ -11,9 +13,13 @@ const ProductCard = ({
 }) => {
   return (
     <div className="w-full h-full rounded-xl shadow-[1px_1px_5px_black] flex flex-col">
-      <img
+      <Image
         src={image}
         alt={title}
+        width={500}
+        height={300}
+        placeholder="blur"
+        blurDataURL={image}
         className="w-full rounded-t-xl object-cover"
       />
       <div className="flex flex-col flex-grow justify-between text-center py-2 px-0.5">
