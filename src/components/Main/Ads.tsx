@@ -3,6 +3,7 @@ import { FlipWords } from "../ui/flip-words";
 import { Button } from "../ui/button";
 import { FaWhatsapp, FaTelegram } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
+import * as configs from "../../../config";
 
 const Ads = () => {
   const words = ["Games", "Websites"];
@@ -20,15 +21,21 @@ const Ads = () => {
           </p>
         </div>
         <div className="text-center flex items-center justify-center gap-4 mt-14">
-          <Button>
-            <FaWhatsapp /> Whatsapp
-          </Button>
-          <Button>
-            <FaTelegram /> Whatsapp
-          </Button>
-          <Button>
-            <CgMail /> Whatsapp
-          </Button>
+          <a href={configs.WHATSAPP_URL}>
+            <Button>
+              <FaWhatsapp /> Whatsapp
+            </Button>
+          </a>
+          <a href={configs.TELEGRAM_URL}>
+            <Button>
+              <FaTelegram /> Telegram
+            </Button>
+          </a>
+          <a href={configs.EMAIL_URL}>
+            <Button>
+              <CgMail /> Email
+            </Button>
+          </a>
         </div>
         <br />
       </div>

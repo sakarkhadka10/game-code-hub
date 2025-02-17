@@ -4,6 +4,7 @@ import "./globals.css";
 import TopHeaderNotification from "@/components/Elements/TopHeaderNotification";
 import DesktopNavBar from "@/components/Desktop/DesktopNavBar";
 import { PROJECT_NAME } from "../../config";
+import Footer from "@/components/Main/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
           <DesktopNavBar />
         </div>
         {children}
+        <Footer />
       </body>
     </html>
   );

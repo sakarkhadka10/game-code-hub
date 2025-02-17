@@ -5,7 +5,6 @@ import { ReviewCardComponent } from "@/components/Desktop/ReviewCard";
 import Ads from "@/components/Main/Ads";
 import Categories from "@/components/Main/Categories";
 import FeatureProduct from "@/components/Main/FeatureProduct";
-import Footer from "@/components/Main/Footer";
 import LatestProduct from "@/components/Main/LatestProduct";
 
 export default function Home() {
@@ -25,7 +24,6 @@ export default function Home() {
 
         {/* FeedBack Sections */}
         <ReviewCardComponent />
-        <Footer />
       </div>
     </div>
   );

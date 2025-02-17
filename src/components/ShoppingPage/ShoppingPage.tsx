@@ -21,8 +21,9 @@ export const ShoppingPage: React.FC<ShoppingPageProps> = ({ items }) => {
             <ProductCard
               image={product.image}
               title={product.title}
-              category={product.category}
               price={product.price}
+              category={product.category}
+              slug={product.slug}
             />
           </div>
         ))}
