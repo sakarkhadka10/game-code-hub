@@ -6,7 +6,7 @@ import TopSellingCard from "../Elements/TopSellingCard";
 const DesktopTopSelling = () => {
   return (
     <>
-      <div className="py-11  bg-[url(/top-selling-bg.webp)] bg-center bg-cover bg-no-repeat  min-h-screen relative">
+      <div className="py-11  bg-[url(/top-selling-bg.webp)] bg-center bg-cover bg-no-repeat  relative">
         <div className="flex flex-wrap px-8 grid-cols-3 justify-end gap-4 items-stretch">
           {Recomended.map((product, index) => {
             return (
